@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Grocery List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Grocery List</h1>
+            <div class="form">
+                <input type="text" required placeholder="Eg. Bananas" minlength="3" maxlength="25" class="text__list">
+                <button type="submit" class="button__add">Add</button>
+            </div>
+            <div id="card__list">
+                <p class="card__list-error"></p>
+            </div>
+
+            <div class="footer">
+                <button type="reset" class="footer__button">Clear All</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
