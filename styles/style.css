@@ -11,7 +11,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #e8e8e8;
-  padding: 20px 0;
 }
 .container .card {
   width: 38vw;
@@ -28,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .card .form .text__list {
+.container .card .form .form__list {
   min-width: 21.875rem;
   height: 1.875rem;
   border-width: 0 0 2px;
@@ -46,10 +45,19 @@ body {
   font-size: 1.25rem;
   letter-spacing: 2px;
 }
+.container .card .card__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  font-size: 0.815rem;
+  height: 1.565rem;
+}
 .container .card #card__list {
-  margin: 1.565rem;
   min-height: 50vh;
-  padding-left: 20px;
+  padding-left: 3.125rem;
+  display: flex;
+  flex-direction: column;
 }
 .container .card .footer {
   display: flex;
@@ -57,9 +65,9 @@ body {
   align-items: center;
 }
 .container .card .footer__button {
-  width: 80px;
+  width: 5rem;
   background: none;
   border-width: 0 0 2px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin: 0.625rem 0 0.625rem 0;
+  font-size: 1.125rem;
 }/*# sourceMappingURL=style.css.map */

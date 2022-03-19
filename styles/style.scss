@@ -1,4 +1,4 @@
-@use "mixins" as *; //
+@use "forwards" as *;
 body {  
     box-sizing: border-box;
     margin: 0 auto;
@@ -9,13 +9,12 @@ body {
     width: 100vw;
     min-height: 100vh;
     @include flex-jc-c-ai-c;
-    background-color: #e8e8e8;
-    padding: 20px 0; 
+    background-color: $light-gray;
     
     .card {
         width: 38vw;
         min-height: 50vh;
-        background-color: #ffffff;
+        background-color: $white;
         border-radius: 0.625rem;
 
         .title {
@@ -26,11 +25,11 @@ body {
         .form {
             @include flex-jc-c-ai-c;
 
-            .text__list {
+            .form__list {
                 min-width: 21.875rem;
                 height: 1.875rem;
                 border-width: 0 0 2px;
-                border-color: #4e4e4e;
+                border-color: $gray;
                 outline: none;
                 margin-left: 1.25rem;
             }
@@ -39,7 +38,7 @@ body {
                 width: 6.25rem;
                 height: 2.190rem;
                 margin: 0.625rem;
-                background-color: #67a4f3;
+                background-color: $aqua;
                 border: none;
                 border-radius: 3px;
                 font-size: 1.25rem;
@@ -47,22 +46,28 @@ body {
             }
         }
 
+        .card__error {
+            @include flex-jc-c-ai-c;
+            color: $red;
+            font-size: 0.815rem;
+            height: 1.565rem;
+        }
+
         #card__list {
-            //background-color: yellow;
-            margin: 1.565rem;
             min-height: 50vh;
-            padding-left: 20px;
+            padding-left: 3.125rem;
+            @include flex-fd-c;
         }
 
         .footer {
             @include flex-jc-c-ai-c;
 
             &__button {
-                width: 80px;
+                width: 5rem;
                 background: none;
                 border-width: 0 0 2px;
-                margin-bottom: 20px;
-                font-size: 18px;
+                margin: 0.625rem 0 0.625rem 0;
+                font-size: 1.125rem;
             }
         }
     }

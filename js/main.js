@@ -11,33 +11,32 @@
 const buttonAdd = document.querySelector(".button__add");
 const textList = document.querySelector("input");
 const buttonResetAll = document.querySelector(".footer__button");
-const trashIcon = document.querySelector("svg");
-const error = document.querySelector("form__error-message");
 
 buttonAdd.addEventListener("click", function addElement() {
     if (textList.value.length < 3 || textList.value.length > 25) {
-        document.getElementById("form__error-message").innerHTML = "Niepoprawna liczba znaków (minimum 3, maksymalnie 25)";
+        document.getElementById("card__error-message").innerHTML = "Incorrect number of characters (minimum 3, maximum 25)";
         textList.value = "";
     } else {
         const text = textList.value;
+        document.getElementById("card__error-message").innerHTML = "";
         textList.value = "";
         const pText = document.createElement("p");
         const node = document.createTextNode(text);
         pText.appendChild(node);
         document.getElementById("card__list").appendChild(pText);
-        document.getElementById("form__error-message").innerHTML = ""; /*?*/
+    
     }
 });
 
-function keepContent() {
+/*function keepContent() {
     var someVarName = localStorage.getItem(card__list);
     console.log(someVarName)
-}cccccccc
+};
 
 
 buttonAdd.addEventListener("click", function addIcon() {
     //document.getElementById("card__list").classList.add("show");
-});
+});*/
 
 
 buttonResetAll.addEventListener("click", function clearAll() {

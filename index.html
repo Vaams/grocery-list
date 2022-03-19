@@ -13,11 +13,15 @@
         <div class="card">
             <h1 class="title">Grocery List</h1>
             <div class="form">
-                <input type="text" required placeholder="Eg. Bananas" minlength="3" maxlength="25" class="text__list">
+                <input type="text" required placeholder="Eg. Bananas" minlength="3" maxlength="25" class="form__list">
                 <button type="submit" class="button__add">Add</button>
             </div>
+
+            <div class="card__error">
+                <p id="card__error-message"></p>
+            </div>
+
             <div id="card__list">
-                <p class="card__list-error"></p>
             </div>
 
             <div class="footer">
@@ -25,6 +29,6 @@
             </div>
         </div>
     </div>
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
