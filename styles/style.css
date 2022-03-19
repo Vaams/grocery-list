@@ -54,6 +54,7 @@ body {
   height: 1.565rem;
 }
 .container .card #card__list {
+  margin: 1.565rem;
   min-height: 50vh;
   padding-left: 3.125rem;
   display: flex;

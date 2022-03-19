@@ -54,6 +54,7 @@ body {
         }
 
         #card__list {
+            margin: 1.565rem;
             min-height: 50vh;
             padding-left: 3.125rem;
             @include flex-fd-c;

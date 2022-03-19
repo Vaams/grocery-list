@@ -1,13 +1,3 @@
-/*
-1. Ogarnać klasy według metodyki BEM
-2. "Skrócić" kod JS na bardziej wydajny i przejrzysty
-3. Po odświeżeniu strony (f5, ikonka refresh, ctrl + f5 itp.) nie jest usuwana zawartość listy jedynie usuwa się po kliknieciu przycisku na dole listy
-4. Naprawić Gita: remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
-+ wrzucić kod na githuba
-5. Ikony kosza obok dodanego elementu aby usunać pojedyńczo wybraną rzecz
-6. Przenieść pliki z branch master na main
-7. Dodawanie produktów przy pomocy entera
-*/
 const buttonAdd = document.querySelector(".button__add");
 const textList = document.querySelector("input");
 const buttonResetAll = document.querySelector(".footer__button");
