@@ -13,7 +13,7 @@ body {
   background-color: #e8e8e8;
 }
 .container .card {
-  width: 38vw;
+  width: 31.25rem;
   min-height: 50vh;
   background-color: #ffffff;
   border-radius: 0.625rem;
@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .card .form .form__list {
+.container .card .form__list {
   min-width: 21.875rem;
   height: 1.875rem;
   border-width: 0 0 2px;
@@ -35,7 +35,7 @@ body {
   outline: none;
   margin-left: 1.25rem;
 }
-.container .card .form .button__add {
+.container .card .form__add {
   width: 6.25rem;
   height: 2.19rem;
   margin: 0.625rem;
@@ -54,11 +54,19 @@ body {
   height: 1.565rem;
 }
 .container .card #card__list {
-  margin: 1.565rem;
+  margin: 0 1.565rem;
   min-height: 50vh;
-  padding-left: 3.125rem;
-  display: flex;
-  flex-direction: column;
+  padding-left: 0.6rem;
+  line-height: 0.5rem;
+}
+.container .card #card__list .card__icon {
+  width: 1.25rem;
+  vertical-align: middle;
+  float: right;
+  color: #ff0000;
+}
+.container .card #card__list .fa-pen-to-square {
+  color: #000000;
 }
 .container .card .footer {
   display: flex;

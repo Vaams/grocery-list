@@ -12,7 +12,7 @@ body {
     background-color: $light-gray;
     
     .card {
-        width: 38vw;
+        width: 31.25rem;
         min-height: 50vh;
         background-color: $white;
         border-radius: 0.625rem;
@@ -25,7 +25,7 @@ body {
         .form {
             @include flex-jc-c-ai-c;
 
-            .form__list {
+            &__list {
                 min-width: 21.875rem;
                 height: 1.875rem;
                 border-width: 0 0 2px;
@@ -34,7 +34,7 @@ body {
                 margin-left: 1.25rem;
             }
     
-            .button__add {
+            &__add {
                 width: 6.25rem;
                 height: 2.190rem;
                 margin: 0.625rem;
@@ -54,10 +54,21 @@ body {
         }
 
         #card__list {
-            margin: 1.565rem;
+            margin: 0 1.565rem;
             min-height: 50vh;
-            padding-left: 3.125rem;
-            @include flex-fd-c;
+            padding-left: 0.6rem;
+            line-height: 0.5rem;
+
+            .card__icon {
+                width: 1.25rem;
+                vertical-align: middle;                
+                float: right;
+                color: $red;
+            }
+
+            .fa-pen-to-square {
+                color: $black;
+            }
         }
 
         .footer {
