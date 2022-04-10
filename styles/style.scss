@@ -17,7 +17,7 @@ body {
         background-color: $white;
         border-radius: 0.625rem;
 
-        .title {
+        &__title {
             text-align: center;
             letter-spacing: 2px;
         }
@@ -58,11 +58,11 @@ body {
             min-height: 50vh;
             padding-left: 0.6rem;
             line-height: 0.5rem;
-
+   
             .card__icon {
                 width: 1.25rem;
-                vertical-align: middle;                
-                float: right;
+                vertical-align: middle;
+                float: right;          
                 color: $red;
             }
 
